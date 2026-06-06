@@ -1,0 +1,209 @@
+/* Luxury Theme Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7; /* Very soft, luxury white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Master Container */
+.card-container {
+    width: 100%;
+    max-width: 380px;
+    background: #ffffff;
+    border-radius: 32px;
+    padding: 24px;
+    box-shadow: 0 15px 45px -10px rgba(184, 153, 90, 0.2); /* Soft, warm shadow */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Radiant Gold Plated Border Effect */
+.luxury-border {
+    border: 3px solid transparent;
+    background-image: linear-gradient(135deg, #f2e1c1 0%, #c4996c 25%, #f2e1c1 50%, #c4996c 75%, #f2e1c1 100%);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+/* Textured Silk Header Background */
+.silk-bg {
+    background-color: #fafafa;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 25%, rgba(0, 0, 0, 0.01) 25%, rgba(0, 0, 0, 0.01) 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, rgba(0, 0, 0, 0.01) 75%, rgba(0, 0, 0, 0.01) 100%);
+    background-size: 8px 8px; /* A very subtle texture pattern */
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 24px;
+    border: 1px solid #eeeeee;
+}
+
+/* Typography & Info */
+.premium-greeting {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+}
+
+.name {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for luxury */
+    font-size: 32px;
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+/* Gold Gradient Text */
+.champ-gold-text {
+    background: linear-gradient(135deg, #c4996c 0%, #b8995a 50%, #f2e1c1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    color: #b8995a;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Avatar with Gold Rim */
+.avatar-container {
+    margin-right: 18px;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(135deg, #f2e1c1, #b8995a, #c4996c);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 4px solid #ffffff;
+}
+
+/* Luxurious Gold Button */
+.gold-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #b8995a, #c4996c);
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 14px;
+    border-radius: 14px;
+    margin-top: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(184, 153, 90, 0.25);
+}
+
+.gold-button:hover {
+    box-shadow: 0 8px 25px rgba(184, 153, 90, 0.4);
+    transform: translateY(-2px);
+}
+
+/* High-End Link Elements */
+.links-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.link-item.gold-ring {
+    border: 1.5px solid #b8995a;
+    position: relative;
+}
+
+.link-item.gold-ring::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 30px;
+    background: #e0e0e0;
+}
+
+.icon-box {
+    width: 30px;
+    font-size: 20px;
+    margin-right: 12px;
+    color: #999999;
+}
+
+.icon-box.gold-icon {
+    color: #b8995a;
+}
+
+.capsule {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px 8px 20px;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Text and Labels */
+.gold-label {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 10px;
+    color: #b8995a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.value {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333333;
+}
+
+/* Elegant Hover for Links */
+.gold-hover-btn:hover {
+    background: linear-gradient(135deg, rgba(184, 153, 90, 0.1), rgba(255, 255, 255, 0.05));
+    transform: scale(1.02);
+}
+
+/* Responsiveness and Final Polish */
+@media (max-width: 480px) {
+    .card-container { max-width: 90vw; }
+    .name { font-size: 28px; }
+}
+
+.silk-bg:hover, .gold-button:hover, .gold-hover-btn:hover {
+    cursor: pointer;
+}
